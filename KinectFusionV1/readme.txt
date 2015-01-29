@@ -2,7 +2,7 @@
 - 書籍「Kinect for Windows SDK 実践プログラミング」のサンプルプログラム
 - （参照コード）https://github.com/UnaNancyOwen/KinectBook2
 
-# KinectFusionを引用、一部改編しました。
+# KinectFusionを引用、一部改変しました。
 - XBOX360での動作
 - KinectFusionにカメラ位置を保存するプログラムを追加
 
