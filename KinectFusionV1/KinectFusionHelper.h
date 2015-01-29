@@ -130,6 +130,7 @@ HRESULT WriteAsciiPlyMeshFile(INuiFusionColorMesh *mesh, char* lpOleFileName, bo
 /// <returns>indicates success or failure</returns>
 /*HRESULT WriteAsciiPlyCameraPoseFile(std::vector<Matrix4> *worldToCameraTransformSeq, LPOLESTR lpOleFileName, bool flipYZ, bool outputColor)*/
 HRESULT WriteAsciiPlyCameraPoseFile(std::vector<Matrix4> *worldToCameraTransformSeq, char* lpOleFileName, bool flipYZ, bool outputColor);
+
 /// <summary>
 /// Write ASCII Wavefront .OBJ file with bitmap texture and material file
 /// See http://en.wikipedia.org/wiki/Wavefront_.obj_file for .OBJ format
