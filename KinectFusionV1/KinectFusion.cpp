@@ -263,8 +263,8 @@ int main(int argc, char **argv)
 		pReconstruction->GetCurrentWorldToCameraTransform(&worldToCameraTransform);
 		hResult = pReconstruction->ProcessFrame(pSmoothDepthFloatImageFrame, pColorImageFrame, NUI_FUSION_DEFAULT_ALIGN_ITERATION_COUNT, NUI_FUSION_DEFAULT_INTEGRATION_WEIGHT, NUI_FUSION_DEFAULT_COLOR_INTEGRATION_OF_ALL_ANGLES, &worldToCameraTransform);
 
-		//std::cout << "R = " << worldToCameraTransform.M11 << " " << worldToCameraTransform.M12 << " " << worldToCameraTransform.M13 << " " << /*worldToCameraTransform.M14 << " " <<*/ worldToCameraTransform.M21 << " " << worldToCameraTransform.M22 << " " << worldToCameraTransform.M23 /*<< " " << worldToCameraTransform.M24*/ << " " << worldToCameraTransform.M31 << " " << worldToCameraTransform.M32 << " " << worldToCameraTransform.M33 << std::endl;
-		//std::cout << "T = " << /*worldToCameraTransform.M34 << " " <<*/ worldToCameraTransform.M41 << " " << worldToCameraTransform.M42 << " " << worldToCameraTransform.M43 << /*" " << worldToCameraTransform.M44 <<*/ std::endl;
+		//std::cout << "R = " << worldToCameraTransform.M11 << " " << worldToCameraTransform.M12 << " " << worldToCameraTransform.M13 << " " << worldToCameraTransform.M21 << " " << worldToCameraTransform.M22 << " " << worldToCameraTransform.M23 << " " << worldToCameraTransform.M31 << " " << worldToCameraTransform.M32 << " " << worldToCameraTransform.M33 << std::endl;
+		//std::cout << "T = " << worldToCameraTransform.M41 << " " << worldToCameraTransform.M42 << " " << worldToCameraTransform.M43 << std::endl;
 		worldToCameraTransformSeq.push_back(worldToCameraTransform);
 
 		if (FAILED(hResult)){
