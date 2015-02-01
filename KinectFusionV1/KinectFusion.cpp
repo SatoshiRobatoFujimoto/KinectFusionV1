@@ -184,6 +184,7 @@ int main(int argc, char **argv)
 	/*cv::namedWindow( "Normal" );*/
 
 	std::vector<Matrix4> worldToCameraTransformSeq;
+
 	while (1){
 		// フレームの更新待ち
 		ResetEvent(hColorEvent);
@@ -354,6 +355,7 @@ int main(int argc, char **argv)
 		// 手動リセット(Rキー)
 		else if (key == 'r'){
 			ResetReconstruction(pReconstruction, &worldToCameraTransform);
+			worldToCameraTransformSeq.resize(0);
 		}
 		// メッシュファイルの保存(Sキー)
 		else if (key == 's'){
